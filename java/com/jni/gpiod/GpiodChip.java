@@ -7,6 +7,6 @@ public class GpiodChip {
 
     @Override
     public String toString() {
-        return String.format("\nTo string method returns: \n\nFile descriptor = %d\nPath = %s", fd, path);
+        return String.format("\n  - File descriptor = %d\n  - Path = %s", fd, path);
     }
 }
