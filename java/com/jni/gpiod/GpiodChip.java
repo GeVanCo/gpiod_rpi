@@ -1,12 +1,16 @@
 package com.jni.gpiod;
 
 public class GpiodChip {
-  	public int fd;
-    public String path;
+  	public int fileDescriptor;
+    public String gpioChipPath;
 
 
     @Override
     public String toString() {
-        return String.format("\n  - File descriptor = %d\n  - Path = %s", fd, path);
+        return String.format(
+            "\n  GpioChip content:\n" +
+            "  - File descriptor = [%d]\n" +
+            "  - Path            = [%s]\n", fileDescriptor, gpioChipPath
+        );
     }
 }
